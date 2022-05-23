@@ -1,0 +1,22 @@
+using System;
+using System.Globalization;
+
+namespace NomeDaPasta{
+    class Program{
+        static void Main(string[] args){
+        }
+    }
+}
+
+CLASSE:
+
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace NomeDaPasta {
+    class NomeDaClasse {
+        
+    }
+}
