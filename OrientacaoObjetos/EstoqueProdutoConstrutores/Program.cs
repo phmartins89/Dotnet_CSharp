@@ -14,7 +14,13 @@ namespace EstoqueProdutoConstrutores{
             Console.Write("Quantidade no estoque: ");
             int quantidade = int.Parse(Console.ReadLine()); // LER UM INT
 
-            Produto p = new Produto(nome,preco,quantidade); // Construtor
+            Produto p = new Produto(nome,preco); // Construtor
+
+            Produto p2 = new Produto{ //Outra forma de estanciar o construtor
+                Nome = "Tv",
+                Preco = 500.00,
+                Quantidade = 20
+            };
 
             Console.WriteLine();
             Console.WriteLine("Dados do Produto: " + p);

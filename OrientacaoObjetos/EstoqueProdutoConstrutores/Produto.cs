@@ -10,11 +10,20 @@ namespace EstoqueProdutoConstrutores {
         public double Preco;
         public int Quantidade;
 
-        public Produto(string nome, double preco, int quantidade){
+        public Produto(string nome, double preco, int quantidade){ //CONSTRUTOR
             Nome = nome;
             Preco = preco;
             Quantidade = quantidade;
         } 
+
+        public Produto(string nome, double preco){
+            Nome = nome;
+            Preco = preco;
+            Quantidade = 0; //nao precisa valores já iniciam com valor Zero
+        }
+
+        public Produto(){ // Sobreccarga
+        }
 
         public double ValoreTotalEmEstoque(){ //METODOS
             return Preco * Quantidade;
