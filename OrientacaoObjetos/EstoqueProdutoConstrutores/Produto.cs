@@ -10,13 +10,17 @@ namespace EstoqueProdutoConstrutores {
         public double Preco;
         public int Quantidade;
 
-        public Produto(string nome, double preco, int quantidade){ //CONSTRUTOR
+        public Produto(){
+            Quantidade = 10;
+        }
+
+        public Produto(string nome, double preco, int quantidade) : this(){ //CONSTRUTOR
             Nome = nome;
             Preco = preco;
             Quantidade = quantidade;
         } 
 
-        public Produto(string nome, double preco){
+        public Produto(string nome, double preco, int quantidade) : this(nome , preco){
             Nome = nome;
             Preco = preco;
             Quantidade = 0; //nao precisa valores já iniciam com valor Zero
